@@ -333,13 +333,6 @@ class SwipeableViews extends React.Component {
     }
 
     this.indexCurrent = indexCurrent;
-
-    if (this.containerNode) {
-      const { axis } = this.props;
-      const transform = axisProperties.transform[axis](indexCurrent * 100);
-      this.containerNode.style.WebkitTransform = transform;
-      this.containerNode.style.transform = transform;
-    }
   }
 
   setRootNode = node => {
